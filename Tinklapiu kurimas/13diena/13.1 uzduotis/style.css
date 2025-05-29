@@ -1,0 +1,97 @@
+:root {
+  --lightgrey: #fdfaf6;
+  --pink: #f29191;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--lightgrey);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navigation {
+  background-color: var(--pink);
+  color: var(--lightgrey);
+  text-align: center;
+}
+
+.nav-logo {
+  padding: 1rem 1rem;
+}
+
+.navigation ul {
+  padding: 0;
+}
+
+.navigation a {
+  color: var(--lightgrey);
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--pink);
+  color: var(--lightgrey);
+  padding: 1rem;
+}
+
+@media (min-width: 577px) {
+  /* Taisyklės, kurios aktyvuosis kai ekrano plotis yra >= 577 pikseliams, rašomos čia: */
+
+  .nav-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Taisyklės, kurios aktyvuosis kai ekrano plotis yra >= 769 pikseliams, rašomos čia: */
+
+  main {
+    display: flex;
+    margin: 0 3rem 0 3rem;
+  }
+}
+
+@media (min-width: 993px) {
+  /* Taisyklės, kurios aktyvuosis kai ekrano plotis yra >= 993 pikseliams, rašomos čia: */
+
+  .navigation {
+    justify-content: start;
+  }
+
+  main {
+    margin: 0 5rem 0 5rem;
+  }
+
+  .section-left {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-right: 2rem;
+  }
+
+  .section-right {
+    flex-grow: 2;
+    flex-basis: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Taisyklės, kurios aktyvuosis kai ekrano plotis yra >= 1200 pikseliams, rašomos čia: */
+
+  main {
+    margin: 0 10rem 0 10rem;
+  }
+}
